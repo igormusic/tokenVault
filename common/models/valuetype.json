@@ -13,7 +13,7 @@
     "id": {
       "type": "Number",
       "id": true,
-      "required": true,
+      "required": false,
       "length": null,
       "precision": 10,
       "scale": 0,
@@ -42,10 +42,33 @@
         "nullable": "NO"
       },
       "_selectable": false
+    },
+     "tenantid": {
+      "type": "Number",
+      "id": true,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mssql": {
+        "columnName": "tenantId",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "NO"
+      },
+      "_selectable": false
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "tenant": {
+      "type": "belongsTo",
+      "model": "tenant",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

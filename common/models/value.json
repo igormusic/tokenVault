@@ -13,7 +13,7 @@
     "id": {
       "type": "Number",
       "id": true,
-      "required": true,
+      "required": false,
       "length": null,
       "precision": 10,
       "scale": 0,
@@ -111,7 +111,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "valueType": {
+      "type": "belongsTo",
+      "model": "valuetype",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
