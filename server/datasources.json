@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "sqlserver": {
+    "host": "WIN2012",
+    "port": 1433,
+    "database": "TokenVault",
+    "password": "tokenVaultAdmin",
+    "name": "sqlserver",
+    "user": "tokenVaultAdmin",
+    "connector": "mssql"
+  }
+}
